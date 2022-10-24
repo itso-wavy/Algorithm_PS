@@ -1,5 +1,6 @@
 // 문제10: 별 찍기(loof)
 
+// 풀이 1
 const enter = 5
 
 for(let i = 0; i < enter; i++) {
@@ -21,3 +22,16 @@ for(let i = 0; i < enter; i++) {
 //   *****
 //  *******
 // *********
+
+// 풀이 2
+enter = 5
+for(let i = 0; i < enter; i++) {
+    //  i : 0 1 2 3 4
+    // ' ': 5 4 3 2 1 
+    // '*': 1 3 5 7 9
+
+    let star = ''
+    star += ' '.repeat(enter - i)
+    star += '*'.repeat(i * 2 + 1)
+    console.log(star)
+}
