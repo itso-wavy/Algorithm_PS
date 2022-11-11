@@ -1,1 +1,1 @@
-# Algorithm_PS
+# ProblemSolving
