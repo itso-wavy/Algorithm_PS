@@ -1,7 +1,7 @@
 function solution(my_string, n) {
-    const arr = []
-    my_string.split('').forEach(i => {
-        for(j = 0; j < n; j++) arr.push(i)
-    })
-    return arr.join('')
+    let answer = ''
+    for(let i of my_string) answer += i.repeat(n)
+    return answer
+    // return [...my_string].reduce((a, c) => a + c.repeat(n), '')
+    // return [...my_string].map(i => i.repeat(n)).join('')
 }
