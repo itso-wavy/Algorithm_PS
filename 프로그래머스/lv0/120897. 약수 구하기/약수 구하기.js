@@ -11,7 +11,7 @@ function solution(n) {
     // 3)
     // return Array.from({ length: n }, (_, i) => i + 1).filter(i => n % i === 0)
     
-    // 4)
+    // 4) array 대신 set 사용
     let s = new Set();
     for (let i = 1; i <= Math.sqrt(n); i++) {
         if (n % i === 0) {
