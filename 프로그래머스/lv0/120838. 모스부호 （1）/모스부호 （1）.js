@@ -6,9 +6,5 @@ function solution(letter) {
         '...':'s','-':'t','..-':'u','...-':'v','.--':'w','-..-':'x',
         '-.--':'y','--..':'z'
     }
-    let arr = []
-    for(let l of letter.split(' ')) {
-        arr.push(morse[l])
-    }
-    return arr.join('');
+    return letter.split(' ').reduce((a,v) => a + morse[v],'');
 }
