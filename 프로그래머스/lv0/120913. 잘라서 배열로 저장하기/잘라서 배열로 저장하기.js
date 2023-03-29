@@ -4,4 +4,5 @@ function solution(my_str, n) {
         answer.push(my_str.slice(i, i+n))
     }
     return answer;
+    // return my_str.match(new RegExp(`.{1,${n}}`, "g"));
 }
