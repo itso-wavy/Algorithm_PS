@@ -1,3 +1,3 @@
 function solution(array) {
-    return array.join('').replace(/[^7]/g,'').length
+    return array.join('').split('7').length - 1
 }
