@@ -1,7 +1,3 @@
 function solution(a, b) {
-    let num = 0
-    for(let i in a) {
-        num += a[i]*b[i]
-    }
-    return num;
+    return a.reduce((v, c, i) => v + c*b[i], 0)
 }
