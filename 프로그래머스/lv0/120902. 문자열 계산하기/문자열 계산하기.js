@@ -3,7 +3,6 @@ function solution(my_string) {
     let num = 0;
     for(let i=0; i<arr.length; i+=2){
         num += (arr[i-1] === '-'? -arr[i] : +arr[i])
-        console.log(i, arr[i-1], arr[i], num)
     }
     return num
 }
