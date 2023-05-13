@@ -1,3 +1,3 @@
 function solution(chicken) {
-    return ~~((chicken-1) / 9);
+    return ~~(chicken*0.111111)
 }
