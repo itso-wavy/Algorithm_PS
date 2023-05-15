@@ -3,4 +3,4 @@ function solution(nums) {
     return set.size >= nums.length/2 
     ? nums.length/2
     : set.size
-}        
+}
