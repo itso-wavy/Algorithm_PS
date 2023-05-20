@@ -1,22 +1,23 @@
 function solution(n) {
-    const arr = [1]
-    for(let i = 2; i <= n; i++) {
-        !(n % i) && arr.push(i)
+    // 1) Time: 0.25 ms, Memory: 33.6 MB
+//     const arr = []
+//     for(let i = 1; i <= Math.sqrt(n); i++) {
+//         !(n % i) && (arr.push(i), arr.push(n/i))
+//     }
+//     return arr.sort((a,b) => a-b)
+    
+        let s = new Set();
+    for (let i = 1; i <= Math.sqrt(n); i++) {
+        if (n % i === 0) {
+            s.add(i);
+            s.add(n / i);
+        }
     }
-    return arr
-    // 2)
-    // return Array(n).fill(0).map((v, i) => v+i+1).filter(i => n % i === 0)
-    
-    // 3)
-    // return Array.from({ length: n }, (_, i) => i + 1).filter(i => n % i === 0)
-    
-    // 4)
-    // let s = new Set();
-    // for (let i = 1; i <= Math.sqrt(n); i++) {
-    //     if (n % i === 0) {
-    //         s.add(i);
-    //         s.add(n / i);
-    //     }
+    return [...s].sort((a, b) => a - b);
+    // 3) Time: 0.24 ms, Memory: 33.5 MB
+    // const set = new Set()
+    // for(let i = 1; i <= n; i++) {
+    //     !(n % i) && set.add(i)
     // }
-    // return [...s].sort((a, b) => a - b);
+    // return [...set]
 }
