@@ -4,7 +4,7 @@
 
 ### 성능 요약
 
-메모리: 33.4 MB, 시간: 0.26 ms
+메모리: 33.4 MB, 시간: 0.15 ms
 
 ### 구분
 
@@ -12,18 +12,18 @@
 
 ### 채점결과
 
-<br/>정확성: 100.0<br/>합계: 100.0 / 100.0
+Empty
 
 ### 문제 설명
 
-<p>첫 번째 분수의 분자와 분모를 뜻하는 <code>denum1</code>, <code>num1</code>, 두 번째 분수의 분자와 분모를 뜻하는 <code>denum2</code>, <code>num2</code>가 매개변수로 주어집니다. 두 분수를 더한 값을 기약 분수로 나타냈을 때 분자와 분모를 순서대로 담은 배열을 return 하도록 solution 함수를 완성해보세요.</p>
+<p>첫 번째 분수의 분자와 분모를 뜻하는 <code>numer1</code>, <code>denom1</code>, 두 번째 분수의 분자와 분모를 뜻하는 <code>numer2</code>, <code>denom2</code>가 매개변수로 주어집니다. 두 분수를 더한 값을 기약 분수로 나타냈을 때 분자와 분모를 순서대로 담은 배열을 return 하도록 solution 함수를 완성해보세요.</p>
 
 <hr>
 
 <h5>제한사항</h5>
 
 <ul>
-<li>0 &lt;<code>denum1</code>, <code>num1</code>,&nbsp;<code>denum2</code>, <code>num2</code> &lt; 1,000</li>
+<li>0 &lt;<code>numer1</code>, <code>denom1</code>,&nbsp;<code>numer2</code>, <code>denom2</code> &lt; 1,000</li>
 </ul>
 
 <hr>
@@ -31,10 +31,10 @@
 <h5>입출력 예</h5>
 <table class="table">
         <thead><tr>
-<th>denum1</th>
-<th>num1</th>
-<th>denum2</th>
-<th>num2</th>
+<th>numer1</th>
+<th>denom1</th>
+<th>numer2</th>
+<th>denom2</th>
 <th>result</th>
 </tr>
 </thead>
