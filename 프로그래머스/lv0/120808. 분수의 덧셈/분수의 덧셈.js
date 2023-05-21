@@ -1,13 +1,11 @@
-function solution(denum1, num1, denum2, num2) {
-    let denum = denum1 * num2 + denum2 * num1;
-    let num = num1 * num2;
-    for(i = num; i >= 2; i--) {
-        if (denum % i === 0 && num % i === 0) {
-        denum = denum / i;
-        num = num / i
+function solution(numer1, denom1, numer2, denom2) {
+    let numer = numer1*denom2 + numer2*denom1
+    let denom = denom1 * denom2
+    for(let i = ~~(denom/2); i > 1; i--){
+        if(!(numer % i) && !(denom % i)) {
+            numer /= i
+            denom /= i
         }
     }
-    var answer = [denum, num];
-    return answer;
+    return [numer, denom]
 }
-
