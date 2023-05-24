@@ -1,4 +1,3 @@
 function solution(citations) {
-    const v = citations.sort((a,b) => b-a).findIndex((v,i) => v <= i)
-    return v !== -1 ? v : citations.length
+    return citations.sort((a,b) => b-a).filter((v,i) => v >= i+1).length
 }
