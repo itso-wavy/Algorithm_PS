@@ -7,13 +7,5 @@ function solution(arr) {
             else stk.pop(), --i
         }
     }
-
-    // for(let i = 0; i < arr.length; i++) {
-    //     !stk.length 
-    //     ? stk.push(arr[i]) 
-    //     : [...stk.slice(-1)] < arr[i]
-    //     ? stk.push(arr[i]) 
-    //     : stk.pop(), i++
-    // }
     return stk;
 }
