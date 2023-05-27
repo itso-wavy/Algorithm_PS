@@ -8,10 +8,15 @@ const input = fs
   .split(newLine)
   .map(v => v.split(' ').map(Number));
 
-const [[n, m]] = input;
-const A = input.slice(1, n + 1);
-const B = input.slice(n + 1);
+const [row, col] = input.shift();
 
-const C = A.map((v, i) => v.map((w, j) => w + B[i][j]));
+const A = input.slice(0, row);
+const B = input.slice(row);
 
-for (let c of C) console.log(...c);
+for (let r = 0; r < row; r++) {
+  for (let c = 0; c < col; c++) {
+    A[r][c] += B[r][c];
+  }
+}
+
+for (let a of A) console.log(...a);
