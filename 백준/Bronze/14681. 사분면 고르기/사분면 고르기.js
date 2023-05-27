@@ -7,19 +7,13 @@ let input = [];
 rl.on('line', line => {
   input.push(parseInt(line));
 }).on('close', () => {
-  const x = ~~input[0];
-  const y = ~~input[1];
+  const [x, y] = input;
+
   if (x > 0) {
-    if (y > 0) {
-      return console.log(1);
-    } else {
-      return console.log(4);
-    }
+    if (y > 0) console.log(1);
+    else console.log(4);
   } else {
-    if (y > 0) {
-      return console.log(2);
-    } else {
-      return console.log(3);
-    }
+    if (y > 0) console.log(2);
+    else console.log(3);
   }
 });
